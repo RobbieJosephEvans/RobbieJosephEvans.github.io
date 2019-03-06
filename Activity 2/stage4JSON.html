@@ -4,7 +4,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
 	
 	</script>
-	<title>Stage 4b JSON Activity</title>
+	<title>Stage 4 JSON Activity</title>
     <style>
         div {
             height: 50px;
@@ -39,10 +39,12 @@
 </div>
 
 <script>
+
 	var myData = "";
     var staticUrl = 'https://raw.githubusercontent.com/RobbieJosephEvans/RobbieJosephEvans.github.io/master/Activity%202/data/data.json'; 
 
     $.getJSON(staticUrl, function(data) {
+        console.log(data);
         iw = window.innerWidth - 100;
         console.log(iw)
 
@@ -69,7 +71,7 @@
         console.log(val2);
         val2 = parseInt(val2);
         console.log(val2);
-        country3Data = data.fact[6].Value;
+        country3Data = data.fact[84].Value;
         console.log(country3Data);
         loc3 = country3Data.indexOf("[");
         console.log(loc3);
@@ -94,8 +96,8 @@
         document.getElementById("div3").style.width = val3s+"px";
 
         document.getElementById("p1").innerHTML = "<pre>"+data.fact[1].dims.COUNTRY + " : "+val1+"</pre>"
-        document.getElementById("p2").innerHTML = "<pre>"+data.fact[1].dims.COUNTRY + " : "+val2+"</pre>"
-        document.getElementById("p3").innerHTML = "<pre>"+data.fact[1].dims.COUNTRY + " : "+val3+"</pre>"
+        document.getElementById("p2").innerHTML = "<pre>"+data.fact[2].dims.COUNTRY + " : "+val2+"</pre>"
+        document.getElementById("p3").innerHTML = "<pre>"+data.fact[84].dims.COUNTRY + " : "+val3+"</pre>"
 //console.log displays the variable in console of search bar from my understanding
 
 
