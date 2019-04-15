@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href = "styles1.css">
+	<title>Green Roofs</title>
+</head>
+<body>
+
+
+	<div class = "header">
+		
+		<div class = "header-center">
+			<a href="realwebsite.html">Home / Green Roofs</a>
+
+		</div>
+
+		<div class="logo">
+			<img src="green-roof.png"/>
+		</div>
+	
+		
+		<div>
+			<img class = "liveStockTracker" src="stocktracker5.png"/>
+		</div>
+
+
+	</div>
+	<!-- Next step is to using flexbox to add content section with a bunch of divs -->
+	<div class = "content">
+
+	</div>
+
+	<!-- Set u your footer just like your header -->
+	<div class = "footer">
+	</div>
+
+	
+	<div class = "flexbox"></div>
+
+	<section style="padding-top: 50px">
+		
+		
+		<div><br><br></div>
+		
+		<p> <img class = "floatLeft" src="greenroofimage.png" alt="Avatar" style="width:200px; height:200px; padding:10px"/> <img class = "floatRight" src="greenroofimage.png" alt="Avatar" style="width:200px; height:200px; padding:10px"/>
+			<div class = "sectionTitle" id = "sectionLink1">
+				<a href="realwebsite.html"><b><i>
+					<span class = "notclick">Green Roof Benefits</span>
+					<span class = "yesclick">&nbsp&nbsp&nbsp&nbspMore Information&nbsp&nbsp&nbsp&nbsp</span>
+				</i></b></a>
+			</div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+
+
+
+	</section>
+
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<iframe width="420" height="315" class="goal7video" src="https://www.youtube.com/embed/mMjxvw5bOhk"></iframe><br><br><br><br><br><br>
+<!--*Note* - you must modify the exact link from YouTube. For example, this video's copy paste from youtube was this: https://www.youtube.com/watch?v=PY5yWjID1m8, but I needed to change it to: https://www.youtube.com/embed/PY5yWjID1m8 . I believe the embed let's the computer know that it's from another application (YouTube), and eliminating the "watch?v=" makes it easier for the computer to understand where it's being linked to-->
+
+<div class="footer">
+<p>
+
+ <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="text">Fact 1: 70% of worldwide carbon emissions are produced by cities.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="text">Fact 2: Green roofing can reduce the demand for air conditioning over the summer by 75%.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="text">Fact 3: Green roofs can save $200,000 over its entire lifetime (in 2006 dollars).</div>
+</div>
+
+</p>
+
+</div>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 6000); // Change image every 6 seconds
+}
+</script>
+
+
+</body>
+</html>
